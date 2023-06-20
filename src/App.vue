@@ -2,10 +2,12 @@
 <script>
 // importa la componente AppTitle.vue
 import AppTitle from './components/AppTitle.vue';
+import AppHero from './components/AppHero.vue'; // importato altro componente che rappresenterà il jumbotron
 export default {
   // oggetto che esporta la componente 
   components:{
-    AppTitle
+    AppTitle,
+    AppHero
 
   },
   
@@ -16,6 +18,7 @@ export default {
   <div>
     <!-- riprende la componente figlio che sarà il file AppTitle.vue -->
     <AppTitle/>
+    <AppHero/> <!--jumbotron-->
     
   </div>
 </template>
